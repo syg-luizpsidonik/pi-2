@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stickers</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="shortcut icon" href="src/img/icone.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="loading">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921" alt="">
+    </div>
+    <div class="header">
+        <header>
+            <img src="src/img/logo.png" alt="">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="produtos.html">Produtos</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <h2>Contato</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input class="campo" onfocus="onfocusinput(this)" onblur="onblurinput(this)" id="nome" type="text"
+                placeholder="Nome">
+            <label for="idade">Idade:</label>
+            <input class="campo" onfocus="onfocusinput(this)" onblur="onblurinput(this)" id="idade" type="number"
+                placeholder="Idade">
+            <label for="email">Email:</label>
+            <input class="campo" onfocus="onfocusinput(this)" onblur="onblurinput(this)" id="email" type="mail"
+                placeholder="E-mail">
+            <label for="telefone">Telefone:</label>
+            <input class="campo" onfocus="onfocusinput(this)" onblur="onblurinput(this)" id="telefone" type="tel"
+                placeholder="Telefone">
+            <label for="cidade">Cidade:</label>
+            <Select class="campo" onfocus="onfocusinput(this)" onblur="onblurinput(this)" id="cidade">
+                <option value="1">Gravataí</option>
+                <option value="2">Porto Alegre</option>
+                <option value="3">Canoas</option>
+                <option value="4">Alvorada</option>
+            </Select>
+            <label for="texto">Mensagem:</label>
+            <textarea class="campo" name="texto" id="texto" rows="3" placeholder="Mensagem" onfocus="onfocusinput(this)"
+                onblur="onblurinput(this)"></textarea>
+            <button class="button" type="submit">Enviar</button>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p>Copyright © 2022 Stickers - Todos os direitos reservados</p>
+    </footer>
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>

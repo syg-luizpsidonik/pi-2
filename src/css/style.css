@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+
+}
+header{
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80px;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img{
+    height: 60px;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 10px;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+}
+header nav ul li a:hover{
+    text-decoration: none;
+    font-weight: 500;
+    color: #5E4C9D;
+}
+
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+.closebtn:hover {
+    color: black;
+}
+
+.capa img{
+    width: 100%;
+}
+.produtos{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.produto{
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.56);
+}
+.produto button{
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: #5E4C9D;
+    color: #fff;
+    border:none;
+}
+.produto h3{
+    padding: 10px;
+}
+.produto button:hover{
+    opacity: 0.5;
+}
+.produto img{
+    max-width: 280px;
+    border-radius: 10px;
+}
+footer{
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    width: 100%;
+}
+h2{
+    margin-top: 20px;
+    text-align: center;
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container .foto img{
+    max-width: 400px;
+    border-radius: 10px;
+}
+.container .desc{
+    padding: 20px;
+}
+.container .desc button{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: #5E4C9D;
+    color: #fff;
+    border:none;
+}
+.container .desc button:hover{
+    opacity: 0.5;
+}
+.tabela{
+    display: flex;
+    justify-content: left;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.raridade {
+    border-collapse:colapso;
+    padding:5px;
+    width: 100%;
+}
+.raridade th {
+    padding:5px;
+    color:#fff;
+    background:#5E4C9D;
+}
+.raridade td {
+    padding:5px;
+
+}
+.titulo{
+    display: flex;
+    justify-content: left;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sobre{
+    background: linear-gradient(180deg, rgba(94,76,157,1) 0%, rgba(86,130,171,1) 100%);
+}
+.loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.campo{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    outline: none;
+    border: 1px solid #5E4C9D;
+    margin-top: 10px;
+    color: rgba(86,130,171,1)
+}
+.campo:hover{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fafafa;
+    outline: none;
+    border: 1px solid #5E4C9D;
+    margin-top: 10px;
+    color: rgba(86,130,171,1)
+}
+label{
+    margin-top: 10px;
+    font-weight: 500;
+    color: rgba(86,130,171,1)
+}
+.button{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: #5E4C9D;
+    color: #fff;
+    border:none;
+    margin-bottom: 150px;
+}
+.button:hover{
+    opacity: 0.5;
+}
+.focus{
+    box-shadow: 0px 0px 5px 1px #5E4C9D;
+}
+@media (max-width: 1024px){
+    .produtos{
+        flex-direction: column;
+    }
+    .produto{
+        margin: 10px;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+    .container .foto{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
