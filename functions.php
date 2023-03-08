@@ -47,6 +47,15 @@ class Controller extends Connect {
         return "Error: ". $e->getMessage();
     }    
   }
+  public function cadastroContato($nome,$email,$assunto,$msg){
+    try {
+        $result = pg_query_params($this->conn, 'insert into tb_contato (nome,assunto,msg,email) values ($1,$2,$3,$4)', array($nome, $assunto, $msg,$email));    
+        return true;
+    } catch (\Exception $e) {
+        return false;
+        return "Error: ". $e->getMessage();
+    }    
+  }
   public function figurinhas(){
     try {
         $result = pg_query_params($this->conn, 'select * from tb_figurinha', array());    

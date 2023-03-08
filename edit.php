@@ -2,7 +2,7 @@
 <?PHP
     session_start();
     require_once("functions.php");
-
+    if(!isset($_SESSION['logado'])) header("location: index.php");
     use app\Controller;
     $func = new Controller();
 ?>
